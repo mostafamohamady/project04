@@ -1,0 +1,34 @@
+.line-with__box-border{
+    position: relative;
+
+    h2{
+    text-align: center;
+    background-color:$redColor;
+    color: #fff;
+    margin: 40px auto;
+    padding: 10px 15px;
+    border: 1.5px solid $greyColor;
+    border-radius: 15px;
+    max-width: 350px;
+    text-transform: uppercase;
+    &:before{
+        content:'';
+        width:100%;
+        height: 1.5px;
+        background-color:$greyColor;
+        position: absolute;
+        left:0;
+        top:50%;
+        z-index: -1;
+
+
+     }
+
+    }
+}
+
+.section-title{
+    color:#706e6e;
+}
+
+

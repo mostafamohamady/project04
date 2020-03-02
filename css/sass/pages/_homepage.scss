@@ -1,0 +1,166 @@
+/*Start Slider*/
+.slider__blockquote{
+    font: {
+        size: 20px;
+        style: italic;
+        weight: bold;
+        family: tahoma,arial;
+    }
+    line-height: 1.7;
+    text-align: center;
+    color: #5e5e5e;
+    width: 80%;
+    margin: 20px auto;
+}
+.slider__img{
+    border-radius:15px;
+    max-width: 100%;
+}
+.slider__bullets{
+    text-align: center;
+    
+    li{
+        display: inline-block;    
+        width: 20px;
+        height: 20px;
+        background-color:$redColor;
+        border-radius: 50%;
+        cursor:pointer;
+        &:hover,
+        &.active{
+            border:2px solid $redColor;
+            background-color: #fff;
+        }
+    }
+}
+/*End Slider*/
+
+/*start services*/
+
+.container__service--flex{
+  
+    @media #{$minMedium}{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
+.service__box{
+    
+    @media #{$minMedium}{
+        flex:32.3% ;
+        max-width:32.3%;
+        }
+}
+.service__title{
+    color: #666;
+    font-size: 20px;
+        
+    i{
+       font-size: 35px;
+        color:#777;
+        position: relative;
+        top:5px;
+    }
+}
+.service__desc{
+    color:#666;
+    font-size: 19px;
+    line-height: 1.5;
+}
+.service__link{
+    text-decoration: none;
+    color:$redColor;
+    
+}
+
+/*End services*/
+/*start our players*/
+
+.container__our-players--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    @media #{$minMedium}    {
+      justify-content: center;
+       }
+  
+
+
+}
+.player__box{
+
+    margin-bottom: 20px;
+    @media #{$maxMobile}{
+        flex: 98%;
+        max-width: 98%;
+        
+    }
+
+    @media #{$minMedium}{
+        flex: 50%;
+        max-width: 50%;
+        text-align:center;
+        padding-left: 4px;
+        padding-right: 4px;
+        }
+    
+    @media #{$minLarg}{ 
+    flex: 19%;
+    
+    }
+}
+.player__img{
+    max-width:100% ;
+    border-radius: 47% 4% 69% 4%;
+    
+}
+.player__title{
+    color: #666;
+    font-size: 20px;  
+    font-weight: normal;
+    span{
+        font-weight: bold
+    }  
+  
+}
+.player__desc{
+    color:#666;
+    font-size: 19px;
+    line-height: 1.5;
+}
+.player__link{
+    text-decoration: none;
+    color:$redColor;
+    font-size: 17
+}
+
+/*End Our playres*/
+/*Start Lorem*/ 
+.container__lorem--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.lorem__img-box{
+    width: (97%/3);
+    border-radius: 12%;
+    border:3px solid #DDD;
+    border-radius: 12% 0;
+    @media #{$maxMobile}{
+        flex:100%;
+        max-width: 98%;
+        margin-bottom: 10px;
+    }
+    img{
+        padding:1px; 
+        border-radius: 12% 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Enad lorem */

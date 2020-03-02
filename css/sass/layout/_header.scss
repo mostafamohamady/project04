@@ -1,0 +1,83 @@
+// Start Header
+.header{
+    border-bottom: 1px solid $greyColor;
+}
+.header__container--flex{
+    display: flex;
+    flex-direction: $flex-dir;
+    padding-top:25px; 
+    @media #{$maxMobile}{
+        flex-direction: column;   
+    }
+    @media #{$minSmall}{
+        flex-direction: column;
+    }
+    @media #{$minMedium}{
+        flex-direction: row;
+    }  
+}
+.header__logo{
+    position: relative;
+    @media #{$minSmall}{
+        width: 100%;
+        text-align: center;
+    }
+    @media #{$minMedium}{
+        flex-direction: row;
+        width: 30%;
+    }
+    
+    h1{
+    margin-top:10px;    
+    margin-bottom:0;
+    }
+    p{
+    font-weight: bold;
+    }
+}
+.header__navbar{
+    border:1.5px solid $greyColor; 
+    border-radius: 15px;
+    display: flex;
+    flex-direction: $flex-dir;
+    align-items: center;
+    background-color: $redColor;
+    text-transform: uppercase;
+    @media #{$maxMobile}{
+        border-radius: 0;
+        display: none;    
+        flex-flow:column; 
+    }   
+
+    @media #{$minSmall}{
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+        display: flex !important;
+        
+    }
+    @media #{$minMedium}{
+        flex-direction: row;
+        width: 70%;
+        margin-top: 1em;
+        
+        
+    }
+    
+    li{
+        width:20%;
+        text-align: center;
+        @media #{$maxMobile}{
+           width: 100%;
+        }   
+        a{
+            display: block;
+            padding: 20px 10px;
+            text-decoration:none;
+            color:#fff;
+            &:hover{color:rgb(231, 195, 195)}
+        }
+    }
+
+}
+// End Header
